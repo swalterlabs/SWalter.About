@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# EvilBaschdi.About
+# SWalter.About
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Target: .NET 10.0](https://img.shields.io/badge/.NET-10.0-512bd4.svg?style=for-the-badge&logo=dotnet)](Directory.Build.props)
@@ -10,20 +10,20 @@ About dialog and application metadata components for .NET applications (Core, Av
 
 ## 📈 Quality & Activity
 
-| Branch | Status & Activity |
-| :--- | :--- |
-| ![Main](https://img.shields.io/badge/branch-main-brightgreen?style=flat-square&logo=git&logoColor=white&color=c9ff00) | [![CodeFactor](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.About/badge/main?style=flat-square)](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.About/overview/main) ![Commit Activity Main](https://img.shields.io/github/commit-activity/m/evilbaschdi/EvilBaschdi.About/main?style=flat-square) ![Last Commit Main](https://img.shields.io/github/last-commit/evilbaschdi/EvilBaschdi.About/main?style=flat-square) |
-| ![Develop](https://img.shields.io/badge/branch-develop-blue?style=flat-square&logo=git&logoColor=white&color=0080ff) | [![CodeFactor](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.About/badge/develop?style=flat-square)](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.About/overview/develop) ![Commit Activity Develop](https://img.shields.io/github/commit-activity/m/evilbaschdi/EvilBaschdi.About/develop?style=flat-square) ![Last Commit Develop](https://img.shields.io/github/last-commit/evilbaschdi/EvilBaschdi.About/develop?style=flat-square) |
+| Branch                                                                                                                | Status & Activity                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Main](https://img.shields.io/badge/branch-main-brightgreen?style=flat-square&logo=git&logoColor=white&color=c9ff00) | [![CodeFactor](https://www.codefactor.io/repository/github/swalterlabs/SWalter.About/badge/main?style=flat-square)](https://www.codefactor.io/repository/github/swalterlabs/SWalter.About/overview/main) ![Commit Activity Main](https://img.shields.io/github/commit-activity/m/swalterlabs/SWalter.About/main?style=flat-square) ![Last Commit Main](https://img.shields.io/github/last-commit/swalterlabs/SWalter.About/main?style=flat-square)                   |
+| ![Develop](https://img.shields.io/badge/branch-develop-blue?style=flat-square&logo=git&logoColor=white&color=0080ff)  | [![CodeFactor](https://www.codefactor.io/repository/github/swalterlabs/SWalter.About/badge/develop?style=flat-square)](https://www.codefactor.io/repository/github/swalterlabs/SWalter.About/overview/develop) ![Commit Activity Develop](https://img.shields.io/github/commit-activity/m/swalterlabs/SWalter.About/develop?style=flat-square) ![Last Commit Develop](https://img.shields.io/github/last-commit/swalterlabs/SWalter.About/develop?style=flat-square) |
 
 ---
 
 ## 📦 Packages in this Repository
 
-| Package | Description | Sources |
-| :--- | :--- | :--- |
-| [`EvilBaschdi.About.Core`](src/EvilBaschdi.About.Core) | Core models and business logic for About dialogs and application metadata. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/evilbaschdi/package/nuget/evilbaschdi.about.core) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/evilbaschdi.about.core) |
-| [`EvilBaschdi.About.Avalonia`](src/EvilBaschdi.About.Avalonia) | Avalonia UI views and view models for the About dialog. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/evilbaschdi/package/nuget/evilbaschdi.about.avalonia) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/evilbaschdi.about.avalonia) |
-| [`EvilBaschdi.About.Terminal`](src/EvilBaschdi.About.Terminal) | Spectre.Console terminal views for application metadata and about info. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/evilbaschdi/package/nuget/evilbaschdi.about.terminal) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/evilbaschdi.about.terminal) |
+| Package                                                | Description                                                                | Sources                                                                                                                                                                                                                                                                                                                       |
+| :----------------------------------------------------- | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`SWalter.About.Core`](src/SWalter.About.Core)         | Core models and business logic for About dialogs and application metadata. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/swalter.about.core) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/swalter.about.core)         |
+| [`SWalter.About.Avalonia`](src/SWalter.About.Avalonia) | Avalonia UI views and view models for the About dialog.                    | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/swalter.about.avalonia) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/swalter.about.avalonia) |
+| [`SWalter.About.Terminal`](src/SWalter.About.Terminal) | Spectre.Console terminal views for application metadata and about info.    | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/swalter.about.terminal) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/swalter.about.terminal) |
 
 ---
 
@@ -31,9 +31,9 @@ About dialog and application metadata components for .NET applications (Core, Av
 
 All packages (Release and Preview builds) are published to **MyGet** and **Codeberg**. You only need to configure **one** of these feeds.
 
-| Registry | Feed URL |
-| :--- | :--- |
-| **MyGet** | `https://www.myget.org/F/evilbaschdi/api/v3/index.json` |
+| Registry     | Feed URL                                                         |
+| :----------- | :--------------------------------------------------------------- |
+| **MyGet**    | `https://www.myget.org/F/swalterlabs/api/v3/index.json`          |
 | **Codeberg** | `https://codeberg.org/api/packages/evilbaschdi/nuget/index.json` |
 
 ### Add Feed via .NET CLI
@@ -42,7 +42,7 @@ Choose either MyGet or Codeberg:
 
 ```bash
 # Option A: MyGet (recommended)
-dotnet nuget add source https://www.myget.org/F/evilbaschdi/api/v3/index.json -n "EvilBaschdi MyGet"
+dotnet nuget add source https://www.myget.org/F/swalterlabs/api/v3/index.json -n "SWalter Labs"
 
 # Option B: Codeberg
 dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/index.json -n "EvilBaschdi Codeberg"
@@ -58,7 +58,7 @@ dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/inde
     <clear />
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
     <!-- Choose one of the following feeds: -->
-    <add key="EvilBaschdi MyGet" value="https://www.myget.org/F/evilbaschdi/api/v3/index.json" />
+    <add key="SWalter Labs" value="https://www.myget.org/F/swalterlabs/api/v3/index.json" />
     <!-- <add key="EvilBaschdi Codeberg" value="https://codeberg.org/api/packages/evilbaschdi/nuget/index.json" /> -->
   </packageSources>
 
@@ -66,11 +66,11 @@ dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/inde
     <packageSource key="nuget.org">
       <package pattern="*" />
     </packageSource>
-    <packageSource key="EvilBaschdi MyGet">
-      <package pattern="EvilBaschdi.*" />
+    <packageSource key="SWalter Labs">
+      <package pattern="SWalter.*" />
     </packageSource>
     <!-- <packageSource key="EvilBaschdi Codeberg">
-      <package pattern="EvilBaschdi.*" />
+      <package pattern="SWalter.*" />
     </packageSource> -->
   </packageSourceMapping>
 </configuration>
@@ -87,15 +87,15 @@ Install any package via `dotnet add package`:
 ### Standard Release
 
 ```bash
-dotnet add package EvilBaschdi.About.Core
-dotnet add package EvilBaschdi.About.Avalonia
-dotnet add package EvilBaschdi.About.Terminal
+dotnet add package SWalter.About.Core
+dotnet add package SWalter.About.Avalonia
+dotnet add package SWalter.About.Terminal
 ```
 
 ### Preview Builds
 
 ```bash
-dotnet add package EvilBaschdi.About.Core --prerelease
-dotnet add package EvilBaschdi.About.Avalonia --prerelease
-dotnet add package EvilBaschdi.About.Terminal --prerelease
+dotnet add package SWalter.About.Core --prerelease
+dotnet add package SWalter.About.Avalonia --prerelease
+dotnet add package SWalter.About.Terminal --prerelease
 ```

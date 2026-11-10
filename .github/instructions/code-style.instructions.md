@@ -56,18 +56,18 @@ public class AboutContent : IAboutContent
 ## Global Usings Available
 
 These usings are available globally across all projects via ImplicitUsings or Directory.Build.props:
-- EvilBaschdi.Core
+- SWalter.Core
 - JetBrains.Annotations
-- EvilBaschdi.About.Core
-- EvilBaschdi.About.Core.Models
+- SWalter.About.Core
+- SWalter.About.Core.Models
 - System.Linq
 
 Additional usings for test projects:
 - AutoFixture.Idioms
 - AutoFixture.Xunit3
-- EvilBaschdi.Testing
+- SWalter.Testing
 - AwesomeAssertions
-- EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection
+- SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection
 - NSubstitute
 - NSubstitute.ReturnsExtensions
 - Xunit

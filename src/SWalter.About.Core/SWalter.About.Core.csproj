@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>About Window Core</Description>
+		<PackageProjectUrl>https://github.com/swalterlabs/SWalter.About</PackageProjectUrl>
+		<PackageTags>About Window Core</PackageTags>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryUrl>https://github.com/swalterlabs/SWalter.About</RepositoryUrl>
+	</PropertyGroup>
+	
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>About Window Avalonia</Description>
+		<AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SWalter.About.Core\SWalter.About.Core.csproj" />
+	</ItemGroup>
+
+</Project>

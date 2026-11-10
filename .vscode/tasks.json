@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/samples/EvilBaschdi.About.Avalonia.DummyApp/EvilBaschdi.About.Avalonia.DummyApp.csproj",
+                "${workspaceFolder}/samples/SWalter.About.Avalonia.DummyApp/SWalter.About.Avalonia.DummyApp.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/samples/EvilBaschdi.About.Avalonia.DummyApp/EvilBaschdi.About.Avalonia.DummyApp.csproj",
+                "${workspaceFolder}/samples/SWalter.About.Avalonia.DummyApp/SWalter.About.Avalonia.DummyApp.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/samples/EvilBaschdi.About.Avalonia.DummyApp/EvilBaschdi.About.Avalonia.DummyApp.csproj"
+                "${workspaceFolder}/samples/SWalter.About.Avalonia.DummyApp/SWalter.About.Avalonia.DummyApp.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

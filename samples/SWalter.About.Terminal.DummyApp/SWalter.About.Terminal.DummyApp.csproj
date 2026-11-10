@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<ApplicationIcon>b.ico</ApplicationIcon>
+		<Authors>Sebastian Walter</Authors>
+		<Company>SWalter Labs</Company>
+		<Copyright>Copyright © 2022 - $([System.DateTime]::UtcNow.ToString(yyyy)) SWalter Labs</Copyright>
+		<Description>DummyApp for SWalter.About.Terminal</Description>
+		<!-- ReSharper disable once UnknownProperty -->
+		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsPackable>false</IsPackable>
+		<LangVersion>preview</LangVersion>
+		<OutputType>Exe</OutputType>
+		<Product>SWalter.About.Terminal DummyApp</Product>
+		<Title>SWalter.About.Terminal.DummyApp</Title>
+		<Version>$([System.DateTime]::UtcNow.ToString(yyyy.M.d.H))</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="b.ico" />
+		<Content Include="about.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\SWalter.About.Terminal\SWalter.About.Terminal.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,41 @@
+<windowing:FAAppWindow xmlns="https://github.com/avaloniaui"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:avalonia="clr-namespace:SWalter.About.Avalonia;assembly=SWalter.About.Avalonia"
+                       xmlns:viewModels="clr-namespace:SWalter.About.Avalonia.DummyApp.ViewModels"
+                       xmlns:windowing="clr-namespace:FluentAvalonia.UI.Windowing;assembly=FluentAvalonia"
+                       xmlns:evilBaschdi="clr-namespace:SWalter.Core.Avalonia.Controls;assembly=SWalter.Core.Avalonia"
+                       mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450" Width="450" Height="450"
+                       x:Class="SWalter.About.Avalonia.DummyApp.MainWindow"
+                       x:DataType="viewModels:MainWindowViewModel" ShowAsDialog="True"
+                       CanResize="False" Title="DummyApp">
+
+    <Panel Name="RootPanel">
+
+        <!-- ReSharper disable once Xaml.PathError -->
+        <evilBaschdi:TitleBarControl Icon="/Assets/b.ico" Name="TitleBarControl" />
+
+        <Panel Name="MainPanel" Margin="0,30,0,0">
+            <Panel Name="ContentPanel" Margin="0,0,0,0">
+                <Grid Margin="7" RowDefinitions="*,46">
+
+                    <Grid Grid.Row="0" Margin="15" RowDefinitions="256,*">
+                        <!-- ReSharper disable once UnusedMember.Global -->
+                        <Image Grid.Row="0" Name="Logo" Source="/Assets/about.png" Stretch="Fill" HorizontalAlignment="Center"
+                               VerticalAlignment="Center" Width="256" Height="256" />
+
+                        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,5,0,0">
+                            <Button Content="About" VerticalAlignment="Top" HorizontalAlignment="Left" ToolTip.Tip="About" Command="{Binding AboutWindowCommand}" />
+                        </StackPanel>
+                    </Grid>
+
+                    <avalonia:AboutFooter Grid.Row="1" />
+
+
+                </Grid>
+            </Panel>
+        </Panel>
+
+    </Panel>
+</windowing:FAAppWindow>

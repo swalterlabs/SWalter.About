@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>About Terminal Output</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SWalter.About.Core\SWalter.About.Core.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
 		<Authors>Sebastian Walter</Authors>
-		<Company>evilbaschdi (Sebastian Walter)</Company>
-		<Copyright>Copyright © 2022 - $([System.DateTime]::UtcNow.ToString(yyyy)) evilbaschdi</Copyright>
+		<Company>SWalter Labs</Company>
+		<Copyright>Copyright © 2022 - $([System.DateTime]::UtcNow.ToString(yyyy)) SWalter Labs</Copyright>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>full</DebugType>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
@@ -12,15 +12,17 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<IsPackable>true</IsPackable>
 		<LangVersion>preview</LangVersion>
+		<PackageId>$(MSBuildProjectName)</PackageId>
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageIconUrl><![CDATA[https://avatars1.githubusercontent.com/u/1897807?s=120&v=4]]></PackageIconUrl>
-		<PackageProjectUrl>https://github.com/evilbaschdi/EvilBaschdi.About</PackageProjectUrl>
+		<PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/323152839?s=180&v=4]]></PackageIconUrl>
+		<PackageProjectUrl>https://github.com/swalterlabs/SWalter.About</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<RepositoryUrl>https://github.com/evilbaschdi/EvilBaschdi.About</RepositoryUrl>
+		<RepositoryUrl>https://github.com/swalterlabs/SWalter.About</RepositoryUrl>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<TargetFrameworks>net10.0</TargetFrameworks>
+		<!--<TargetFramework>net12.0</TargetFramework>-->
+		<TargetFrameworks>net11.0;net10.0</TargetFrameworks>
 		<VersionPrefix>$([System.DateTime]::UtcNow.ToString(yyyy.M.d.H))</VersionPrefix>
 	</PropertyGroup>
 
@@ -38,25 +40,25 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Using Include="EvilBaschdi.Core" />
+		<Using Include="SWalter.Core" />
 		<Using Include="JetBrains.Annotations" />
-		<Using Include="EvilBaschdi.About.Core" />
-		<Using Include="EvilBaschdi.About.Core.Models" />
+		<Using Include="SWalter.About.Core" />
+		<Using Include="SWalter.About.Core.Models" />
 	</ItemGroup>
 
 	<!-- ReSharper disable once UnknownProperty -->
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
 		<Using Include="AutoFixture.Idioms" />
 		<Using Include="AutoFixture.Xunit3" />
-		<Using Include="EvilBaschdi.Testing" />
+		<Using Include="SWalter.Testing" />
 		<Using Include="AwesomeAssertions" />
-		<Using Include="EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
+		<Using Include="SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
 		<Using Include="NSubstitute" />
 		<Using Include="NSubstitute.ReturnsExtensions" />
 		<Using Include="Xunit" />
 	</ItemGroup>
 
-	<PropertyGroup Condition="'$(Configuration)' == 'Release' And $(MSBuildProjectName.EndsWith('.Tests')) == false">
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) == false">
 		<GenerateSBOM>true</GenerateSBOM>
 	</PropertyGroup>
 
@@ -71,13 +73,13 @@
 	<Choose>
 		<When Condition="$(MSBuildProjectName.EndsWith('.Core'))">
 			<ItemGroup>
-				<PackageReference Include="EvilBaschdi.Core" />
-				<PackageReference Include="EvilBaschdi.Core.DependencyInjection" />
+				<PackageReference Include="SWalter.Core" />
+				<PackageReference Include="SWalter.Core.DependencyInjection" />
 			</ItemGroup>
 		</When>
 		<When Condition="$(MSBuildProjectName.EndsWith('.Avalonia'))">
 			<ItemGroup>
-				<PackageReference Include="EvilBaschdi.Core.Avalonia" />
+				<PackageReference Include="SWalter.Core.Avalonia" />
 			</ItemGroup>
 		</When>
 		<When Condition="$(MSBuildProjectName.EndsWith('.Terminal'))">
@@ -89,7 +91,7 @@
 
 	<!-- ReSharper disable once UnknownProperty -->
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
-		<PackageReference Include="EvilBaschdi.Testing" />
+		<PackageReference Include="SWalter.Testing" />
 		<PackageReference Include="xunit.v3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" />
 		<PackageReference Include="coverlet.collector">

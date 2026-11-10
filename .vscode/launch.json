@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/samples/EvilBaschdi.About.Avalonia.DummyApp/bin/Debug/net10.0/win-x64/EvilBaschdi.About.Avalonia.DummyApp.dll",
+            "program": "${workspaceFolder}/samples/SWalter.About.Avalonia.DummyApp/bin/Debug/net10.0/win-x64/SWalter.About.Avalonia.DummyApp.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/samples/EvilBaschdi.About.Avalonia.DummyApp",
+            "cwd": "${workspaceFolder}/samples/SWalter.About.Avalonia.DummyApp",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

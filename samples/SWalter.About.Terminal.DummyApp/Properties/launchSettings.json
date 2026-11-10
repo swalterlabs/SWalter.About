@@ -1,0 +1,11 @@
+{
+    "profiles": {
+        "SWalter.About.Terminal.DummyApp": {
+            "commandName": "Project"
+          },
+        "WSL": {
+            "commandName": "WSL2",
+            "distributionName": "AzureLinux-4"
+          }
+      }
+  }
